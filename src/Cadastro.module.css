@@ -1,0 +1,80 @@
+.container {
+    padding: 40px;
+    position: relative;
+  }
+  
+  .topButtons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .entrar {
+    margin-right: 10px;
+    padding: 8px 16px;
+    background-color: #eacbb1;
+    color: #5c2e0f;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .cadastrar {
+    padding: 8px 16px;
+    background-color: #c26b2f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .title {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  
+  .plus {
+    font-size: 36px;
+    margin-right: 12px;
+  }
+  
+  .sections {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: nowrap;
+  }
+  
+  .card {
+    width: 360px;
+  }
+  
+  .toggleButton {
+    width: 100%;
+    text-align: left;
+    background-color: #f0f0f0;
+    color: #5c2e0f;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .form {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .form input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
