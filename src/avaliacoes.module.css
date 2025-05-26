@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+.container {
+    padding: 2rem;
+    background-color: #f4c8a4;
+    font-family: 'Marcellus', serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 2rem;
+    color: #6b2d17;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+.card {
+    background-color: #ffe8d1;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.nome {
+    font-size: 1.2rem;
+    color: #6b2d17;
+    font-weight: bold;
+}
+
+.estrelas {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.comentario {
+    color: #5c3c1e;
+    font-size: 1rem;
+    line-height: 1.5;
+}
