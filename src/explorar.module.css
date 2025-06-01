@@ -75,7 +75,7 @@
 .imagem {
     width: 100%;
     max-width: 250px; /* ⬅️ Limita o tamanho máximo */
-    height: 180;    /* ⬅️ Mantém altura consistente */
+    height: 180px;    /* ⬅️ Mantém altura consistente */
     object-fit: cover; /* ⬅️ Garante que a imagem preencha o espaço sem distorcer */
     border-radius: 8px;
     margin: 0 auto;   /* ⬅️ Centraliza horizontalmente */
