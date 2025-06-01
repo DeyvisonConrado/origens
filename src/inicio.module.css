@@ -16,7 +16,8 @@
     padding-right: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
+    margin-top: 100px;
 }
 
 .titulo {
@@ -31,14 +32,16 @@
     line-height: 1.5;
     color: #5c3c1e;
     max-width: 500px;
+    text-align: justify;
 }
 
 .mapaArea {
+    margin-top: 100px;
     position: relative;
     flex: 1;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+     justify-content: top;
 }
 
 .mapa {
@@ -48,7 +51,8 @@
 }
 
 .textoMapa {
-    position: absolute;
+    display: flex;
+       justify-content: right;
     bottom: 15%;
     right: 30%;
     color: #5c3c1e;
