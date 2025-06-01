@@ -13,7 +13,7 @@ export function Entrar() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.titulo}>ORIGENS</h1>
+      <h1 className={styles.titulo}>Login</h1>
       <form onSubmit={handleSubmit} className={styles.formulario}>
         <label className={styles.label}>
           Usuário
