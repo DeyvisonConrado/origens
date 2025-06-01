@@ -7,7 +7,9 @@
     font-family: 'Marcellus', serif;
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
+    width: 100%;
 }
 
 .titulo {
@@ -27,7 +29,7 @@
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.5rem;
     width: 100%;
-    max-width: 1000px;
+    max-width: 600px;
 }
 
 .card {
@@ -87,3 +89,31 @@
 .remover:hover {
     transform: scale(1.2);
 }
+
+.usuarioLogado {
+  background-color: #D2A679;     /* tom marrom escuro elegante */
+  color: #6b2d17;                /* bege claro para contraste */
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: 'Marcellus', serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border: 2px solid #d2a679;     /* borda dourada suave */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+}
+
+.usuarioLogado:hover {
+  transform: scale(1.05);
+}
+
+.topButtons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+

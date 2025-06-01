@@ -1,6 +1,7 @@
 import styles from './estoque.module.css';
 import { useState } from 'react';
 import { PlusCircle, Trash2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export function Estoque() {
   const [materiais, setMateriais] = useState([
@@ -36,6 +37,11 @@ export function Estoque() {
 
   return (
     <section className={styles.container}>
+
+      <div className={styles.topButtons}>
+                <Link to="/perfil" className={styles.usuarioLogado}>Olá, Usuário!</Link>
+      </div>
+
       <h2 className={styles.titulo}>Controle de Estoque</h2>
 
       <div className={styles.adicionar}>

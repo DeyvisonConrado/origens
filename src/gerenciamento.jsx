@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { List, ClipboardList } from 'lucide-react';
 import styles from './gerenciamento.module.css';
 import pedidoIcon from './assets/pedidos.svg';
+import { Link } from 'react-router-dom';
 
 const pedidos = [
   {
@@ -9,7 +10,7 @@ const pedidos = [
     nome: 'Lucas Rodolfo',
     pedido: 'CHAPÉU DE LAMPIÃO',
     data: '30/04/2025',
-    endereco: 'AV. CAIS DO APOLO, RECIFE ANTIGO, RECIFE-PE',
+    endereco: 'AV. CAIS DO APOLO, RECIFE, RECIFE-PE',
     pagamento: 'CARTÃO DE CRÉDITO',
     status: 'CONFIRMADO'
   },
@@ -56,6 +57,12 @@ export function Gerenciamento(props) {
 
   return (
     <div className={styles.container}>
+
+      <div className={styles.topButtons}>
+                <Link to="/perfil" className={styles.usuarioLogado}>Olá, Usuário!</Link>
+      </div>
+
+
       <div className={styles.header}>
         <img src={pedidoIcon} alt="Ícone pedido" className={styles.iconPedido} />
         <h1 className={styles.titulo}>Gerenciamento de pedidos</h1>

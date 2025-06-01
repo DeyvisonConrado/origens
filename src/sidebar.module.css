@@ -5,13 +5,14 @@
   background-color: #D2A679;
   padding: 1rem;
   font-family: 'Georgia', serif;
-  height: 100vh;
+  height: 122vh;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  
 }
 
-  
+
 
 
 .logo {

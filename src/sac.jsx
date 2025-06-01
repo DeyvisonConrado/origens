@@ -1,9 +1,16 @@
 import styles from './sac.module.css';
 import { Mail } from 'lucide-react';  // Ícone de envelope
+import { Link } from 'react-router-dom';
 
 export function SAC({ assunto, onAssuntoChange, mensagem, onMensagemChange, onSubmit }) {
   return (
     <section className={styles.container}>
+
+      <div className={styles.topButtons}>
+              <Link to="/perfil" className={styles.usuarioLogado}>Olá, Usuário!</Link>
+      </div>
+
+
       <div className={styles.iconArea}>
         <Mail size={48} className={styles.icon} />
         <h2 className={styles.titulo}>SAC</h2>

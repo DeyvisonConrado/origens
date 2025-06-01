@@ -1,6 +1,7 @@
 import styles from './favoritos.module.css';
 import { Trash2 } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import vestidoImg from './assets/vestido.jpg';
 import croppedBucketImg from './assets/cropped-bucket.jpg';
@@ -22,7 +23,12 @@ export function Favoritos() {
 
   return (
     <section className={styles.container}>
-      <h2 className={styles.titulo}>Seus Favoritos</h2>
+
+      <div className={styles.topButtons}>
+        <Link to="/perfil" className={styles.usuarioLogado}>Olá, Usuário!</Link>
+      </div>
+
+     <h2 className={styles.titulo}>Seus Favoritos</h2>
 
       {favoritos.length === 0 ? (
         <p className={styles.vazio}>Nenhum item nos favoritos.</p>

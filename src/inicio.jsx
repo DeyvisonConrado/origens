@@ -9,7 +9,7 @@ export function Inicio(props) {
     <div className={styles.container}>
 
         <div className={styles.topButtons}>
-                <button className={styles.entrar}>ENTRAR</button>
+                <Link to="/entrar" className={styles.entrar}>ENTRAR</Link>
                 <Link to="/cadastro" className={styles.cadastrar}>CADASTRAR</Link>
         </div>
 

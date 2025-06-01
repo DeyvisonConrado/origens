@@ -1,5 +1,6 @@
 import styles from './avaliacoes.module.css';
 import { Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export function Avaliacoes() {
   const avaliacoes = [
@@ -37,6 +38,13 @@ export function Avaliacoes() {
 
   return (
     <section className={styles.container}>
+
+      <div className={styles.topButtons}>
+                <Link to="/entrar" className={styles.entrar}>ENTRAR</Link>
+                <Link to="/cadastro" className={styles.cadastrar}>CADASTRAR</Link>
+      </div>
+
+
       <h2 className={styles.titulo}>O que nossos clientes dizem</h2>
       <div className={styles.lista}>
         {avaliacoes.map(avaliacao => (

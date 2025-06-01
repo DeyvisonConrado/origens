@@ -8,6 +8,7 @@
     background-color: #f4c8a4;
     min-height: 100vh;
     font-family: 'Marcellus', serif;
+    position: relative;
 }
 
 .textArea {
@@ -73,6 +74,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    text-decoration: none;
 }
 
 .entrar:hover {

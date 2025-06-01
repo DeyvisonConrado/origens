@@ -1,6 +1,7 @@
 import styles from './explorar.module.css';
 import { useState } from 'react';
 import { Map } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 import vestidoImg from './assets/vestido.jpg';
 import croppedBucketImg from './assets/cropped-bucket.jpg';
@@ -11,7 +12,7 @@ import conjuntoImg from './assets/conjunto.jpg';
 
 const produtos = [
   { nome: 'Vestido Chita Florido', preco: 'R$ 150,00', categoria: 'VESTIMENTAS', estado: 'RN', imagem: vestidoImg },
-  { nome: 'Cropped + Bucket Crochê', preco: 'R$ 200,00', categoria: 'VESTIMENTAS', estado: 'PE', imagem: croppedBucketImg },
+  { nome: 'Cropped + Bucket', preco: 'R$ 200,00', categoria: 'VESTIMENTAS', estado: 'PE', imagem: croppedBucketImg },
   { nome: 'Saída de Praia', preco: 'R$ 120,00', categoria: 'VESTIMENTAS', estado: 'AL', imagem: saidaPraiaImg },
   { nome: 'Cropped Crochê', preco: 'R$ 80,00', categoria: 'VESTIMENTAS', estado: 'SE', imagem: croppedImg },
   { nome: 'Biquíni Crochê', preco: 'R$ 100,00', categoria: 'VESTIMENTAS', estado: 'MA', imagem: biquiniImg },
@@ -22,6 +23,7 @@ const categorias = ['VESTIMENTAS', 'DECORAÇÃO', 'ACESSÓRIOS', 'CALÇADOS', 'C
 const estados = ['RN', 'PE', 'AL', 'SE', 'MA', 'PB'];
 
 export function Explorar() {
+
   const [categoriaSelecionada, setCategoriaSelecionada] = useState('');
   const [estadoSelecionado, setEstadoSelecionado] = useState('');
 
@@ -33,7 +35,16 @@ export function Explorar() {
   });
 
   return (
+
+    
+
     <section className={styles.container}>
+
+       <div className={styles.topButtons}>
+                <Link to="/entrar" className={styles.entrar}>ENTRAR</Link>
+                <Link to="/cadastro" className={styles.cadastrar}>CADASTRAR</Link>
+        </div>
+
       <div className={styles.header}>
         <Map size={48} />
         <h2 className={styles.titulo}>Explorar</h2>

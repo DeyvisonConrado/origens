@@ -5,6 +5,7 @@
     background-color: #f4c8a4;
     font-family: 'Marcellus', serif;
     min-height: 100vh;
+    position: relative;
 }
 
 .header {
@@ -54,7 +55,7 @@
 .produtos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .card {
@@ -63,6 +64,8 @@
     padding: 1rem;
     text-align: center;
     transition: transform 0.2s ease;
+    width: 230px;  /* ⬅️ Largura fixa */
+    height: 340px;
 }
 
 .card:hover {
@@ -71,8 +74,14 @@
 
 .imagem {
     width: 100%;
+    max-width: 250px; /* ⬅️ Limita o tamanho máximo */
+    height: 180;    /* ⬅️ Mantém altura consistente */
+    object-fit: cover; /* ⬅️ Garante que a imagem preencha o espaço sem distorcer */
     border-radius: 8px;
+    margin: 0 auto;   /* ⬅️ Centraliza horizontalmente */
+    display: block;
 }
+
 
 .nome {
     margin-top: 0.5rem;
@@ -122,4 +131,45 @@
     color: #6b2d17;
     font-weight: bold;
     font-family: 'Marcellus', serif;
+}
+
+.topButtons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.entrar {
+    padding: 8px 16px;
+    background-color: #6b2d17;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+
+.entrar:hover {
+    background-color: #91422a;
+}
+
+.cadastrar {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #6b2d17;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+
+}
+
+.cadastrar:hover {
+    background-color: #ffe0c7;
 }

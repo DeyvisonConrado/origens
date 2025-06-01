@@ -13,6 +13,9 @@ import { Carrinho } from './carrinho.jsx';
 import { Avaliacoes } from './avaliacoes.jsx';
 import { Favoritos } from './favoritos.jsx';
 import { Estoque } from './estoque.jsx';
+import { Entrar } from './entrar.jsx';
+import { Perfil } from './perfil.jsx';
+import ScrollToTop from './scrollToTop.jsx';
 //import { Mapa } from './mapa.jsx';
 
 import styles from './app.module.css';
@@ -21,6 +24,7 @@ import './global.css';
 function App() {
   return (
    <Router>
+     <ScrollToTop />
       <div className={styles.wrapper}>
         
       <Sidebar />
@@ -39,6 +43,8 @@ function App() {
             <Route path="/avaliacoes" element={<Avaliacoes />} />
             <Route path="/favoritos" element={<Favoritos />} />
             <Route path="/estoque" element={<Estoque />} />
+            <Route path="/entrar" element={<Entrar />} />
+            <Route path="/perfil" element={<Perfil />} />
         </Routes>
         
 

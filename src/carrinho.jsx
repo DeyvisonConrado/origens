@@ -1,6 +1,7 @@
 import styles from './carrinho.module.css';
 import { ShoppingCart, Trash2, PlusCircle } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export function Carrinho() {
   const [itens, setItens] = useState([
@@ -38,6 +39,11 @@ export function Carrinho() {
 
   return (
     <section className={styles.container}>
+
+      <div className={styles.topButtons}>
+                <Link to="/perfil" className={styles.usuarioLogado}>Olá, Usuário!</Link>
+      </div>
+
       <div className={styles.header}>
         <ShoppingCart size={48} />
         <h2 className={styles.titulo}>Carrinho de Compras</h2>

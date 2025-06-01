@@ -16,12 +16,12 @@ export function Sidebar() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.sidebarToggle}>
+      {/*<div className={styles.sidebarToggle}>
         <button onClick={toggleSidebar} className={styles.toggleButton}>
           {isOpen ? <X /> : <Menu />}
         </button>
         {!isOpen && <span className={styles.logoMini}>Origens</span>}
-      </div>
+      </div>*/}
 
       {isOpen && (
         <aside className={styles.sidebar}>
@@ -37,7 +37,7 @@ export function Sidebar() {
 
             <p className={styles.sectionTitle}>ÁREA DO ARTESÃO</p>
             <ul>
-              <li><Link to="/cadastro" className={styles.button}><User size={18} /> Perfil Vendedor</Link></li>
+              <li><Link to="/perfil" className={styles.button}><User size={18} /> Perfil Vendedor</Link></li>
               <li><Link to="/analise" className={styles.button}><BarChart2 size={18} /> Análise de Vendas</Link></li>
               <li><Link to="/estoque" className={styles.button}><Boxes size={18} /> Estoque</Link></li>
               <li><Link to="/pedidos" className={styles.button}><PackageCheck size={18} /> Pedidos</Link></li>

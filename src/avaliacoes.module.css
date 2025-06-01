@@ -7,7 +7,8 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    position: relative;
 }
 
 .titulo {
@@ -15,6 +16,7 @@
     color: #6b2d17;
     margin-bottom: 2rem;
     font-weight: bold;
+    align-items: left;
 }
 
 .lista {
@@ -59,4 +61,45 @@
     color: #5c3c1e;
     font-size: 1rem;
     line-height: 1.5;
+}
+
+.topButtons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.entrar {
+    padding: 8px 16px;
+    background-color: #6b2d17;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+
+.entrar:hover {
+    background-color: #91422a;
+}
+
+.cadastrar {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #6b2d17;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+
+}
+
+.cadastrar:hover {
+    background-color: #ffe0c7;
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './analise.module.css';
 
 // Imagens dos produtos
@@ -25,6 +26,11 @@ export function Analise(props) {
 
   return (
     <div className={styles.container}>
+
+      <div className={styles.topButtons}>
+                <Link to="/perfil" className={styles.usuarioLogado}>Olá, Usuário!</Link>
+      </div>
+
       <div className={styles.tituloContainer}>
         <img src={iconeAnalise} alt="Ícone de Análise" className={styles.iconeAnalise} />
         <h2 className={styles.titulo}>Análise de Vendas</h2>
