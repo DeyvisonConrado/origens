@@ -48,12 +48,12 @@ Acesse esse link no seu navegador para ver a aplicação rodando!
 ### Estrutura do Projeto
 
 src/
-├── assets/        → Imagens e recursos visuais
-├── components/    → Componentes reutilizáveis (Header, Footer, CardProduto)
-├── pages/         → Páginas principais (Home, Produtos)
-├── App.jsx        → Estrutura geral da aplicação
-├── main.jsx       → Ponto de entrada do React
-├── index.css      → Estilos globais
+  ├── assets/        → Imagens e recursos visuais
+  ├── components/    → Componentes reutilizáveis (Header, Footer, CardProduto)
+  ├── pages/         → Páginas principais (Home, Produtos)
+  ├── App.jsx        → Estrutura geral da aplicação
+  ├── main.jsx       → Ponto de entrada do React
+  ├── index.css      → Estilos globais
 
 ### Versão MVP
 
@@ -64,7 +64,6 @@ O MVP entrega as seguintes funcionalidades:
 * Layout responsivo básico
 * Componentização das seções da interface
 
+## Link para a documentação
 
-
-
-=============================================================================
+https://drive.google.com/drive/folders/1P5JKs09ljXYjFGm48BSR9Qiz4KBuG3Ot?usp=sharing
