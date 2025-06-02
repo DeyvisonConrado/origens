@@ -49,10 +49,15 @@ Acesse esse link no seu navegador para ver a aplicação rodando!
 
 src/
   ├── assets/        → Imagens e recursos visuais
+  
   ├── components/    → Componentes reutilizáveis (Header, Footer, CardProduto)
+  
   ├── pages/         → Páginas principais (Home, Produtos)
+  
   ├── App.jsx        → Estrutura geral da aplicação
+  
   ├── main.jsx       → Ponto de entrada do React
+  
   ├── index.css      → Estilos globais
 
 ### Versão MVP
