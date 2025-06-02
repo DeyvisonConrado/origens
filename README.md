@@ -48,17 +48,12 @@ Acesse esse link no seu navegador para ver a aplicação rodando!
 ### Estrutura do Projeto
 
 src/
-  ├── assets/        → Imagens e recursos visuais
-  
-  ├── components/    → Componentes reutilizáveis (Header, Footer, CardProduto)
-  
-  ├── pages/         → Páginas principais (Home, Produtos)
-  
-  ├── App.jsx        → Estrutura geral da aplicação
-  
-  ├── main.jsx       → Ponto de entrada do React
-  
-  ├── index.css      → Estilos globais
+├── assets/        → Imagens e recursos visuais
+├── components/    → Componentes reutilizáveis (Header, Footer, CardProduto)
+├── pages/         → Páginas principais (Home, Produtos)
+├── App.jsx        → Estrutura geral da aplicação
+├── main.jsx       → Ponto de entrada do React
+├── index.css      → Estilos globais
 
 ### Versão MVP
 
@@ -68,6 +63,15 @@ O MVP entrega as seguintes funcionalidades:
 * Listagem de produtos artesanais
 * Layout responsivo básico
 * Componentização das seções da interface
+
+### 📌 Futuras melhorias
+
+* Sistema de autenticação de usuários
+* Integração com backend
+* Carrinho de compras
+* Filtros por categoria/região
+* Responsividade completa
+* Expansão para outras regiões do Brasil
 
 ## Link para a documentação
 
