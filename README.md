@@ -47,13 +47,8 @@ Acesse esse link no seu navegador para ver a aplicação rodando!
 
 ### Estrutura do Projeto
 
-src/
-├── assets/        → Imagens e recursos visuais
-├── components/    → Componentes reutilizáveis (Header, Footer, CardProduto)
-├── pages/         → Páginas principais (Home, Produtos)
-├── App.jsx        → Estrutura geral da aplicação
-├── main.jsx       → Ponto de entrada do React
-├── index.css      → Estilos globais
+![image](https://github.com/user-attachments/assets/32cff2fe-ab43-4ed6-a478-8702ffaf7581)
+
 
 ### Versão MVP
 
