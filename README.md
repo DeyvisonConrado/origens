@@ -61,10 +61,6 @@ O MVP entrega as seguintes funcionalidades:
 
 ### 📌 Futuras melhorias
 
-* Sistema de autenticação de usuários
-* Integração com backend
-* Carrinho de compras
-* Filtros por categoria/região
 * Responsividade completa
 * Expansão para outras regiões do Brasil
 
